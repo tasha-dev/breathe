@@ -4,7 +4,7 @@ import { RootLayoutProps } from "@/type/component";
 import type { Metadata } from "next";
 import { JSX } from "react";
 import { Poppins } from "next/font/google";
-import "@/style";
+import "@/style/index.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
