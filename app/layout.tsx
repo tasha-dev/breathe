@@ -28,20 +28,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Mahdi Tasha" }],
   creator: "Mahdi Tasha",
   publisher: "Breathe App",
+  manifest: "/manifest.json",
   openGraph: {
     title: "Breathe 🌱 | Quit Nicotine, Track Progress & Build Healthy Habits",
     description:
       "Breathe is a progressive web app (PWA) to help people quit nicotine, track their progress, and stay motivated with reminders and milestones.",
     url: "https://breathe-air.vercel.app/",
     siteName: "Breathe",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Breathe App – Quit Nicotine",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -66,7 +59,7 @@ const mainFont = Poppins({
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   // Returning JSX
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <body className={cn("bg-background text-foreground", mainFont.className)}>
         <ThemeProvider>
           <Toaster />
