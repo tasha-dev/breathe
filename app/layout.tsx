@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Breathe 🌱 | Quit Nicotine, Track Progress & Build Healthy Habits",
     description:
       "Breathe is a progressive web app (PWA) to help people quit nicotine, track their progress, and stay motivated with reminders and milestones.",
-    // url: "https://breathe-app.com",
+    url: "https://breathe-air.vercel.app/",
     siteName: "Breathe",
     images: [
       {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  // alternates: {
-  //   canonical: "https://breathe-app.com",
-  // },
+  alternates: {
+    canonical: "https://breathe-air.vercel.app/",
+  },
 };
 
 // Defining fonts
