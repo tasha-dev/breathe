@@ -60,12 +60,14 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   // Returning JSX
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
-      <body className={cn("bg-background text-foreground", mainFont.className)}>
-        <ThemeProvider>
+      <ThemeProvider>
+        <body
+          className={cn("bg-background text-foreground", mainFont.className)}
+        >
           <Toaster />
           {children}
-        </ThemeProvider>
-      </body>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

@@ -3,6 +3,19 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@theme {
+  --color-theme-50: "#edf9f3";
+  --color-theme-100: "#d3f1e0";
+  --color-theme-200: "#a8e3c2";
+  --color-theme-300: "#78cfa0";
+  --color-theme-400: "#4dbb80";
+  --color-theme-500: "#1d6e47";
+  --color-theme-600: "#18603e";
+  --color-theme-700: "#124f34";
+  --color-theme-800: "#0d3d28";
+  --color-theme-900: "#082a1c";
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -94,7 +107,7 @@
   --spacing: 0.25rem;
 }
 
-.dark {
+[data-theme="dark"] {
   --background: #020817;
   --foreground: #e2e8f0;
   --card: #0f172a;
@@ -205,4 +218,14 @@
 
 body {
   letter-spacing: var(--tracking-normal);
+}
+
+@layer base {
+  button:not(:disabled) {
+    @apply transition-all origin-center duration-500 active:scale-95 cursor-pointer;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
 }
