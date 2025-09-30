@@ -1,7 +1,9 @@
+// Codes by mahdi tasha
+// Importing part
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// Defining next.js configs
+const nextConfig: NextConfig = {};
 
+// Exporting the configs as default
 export default nextConfig;
